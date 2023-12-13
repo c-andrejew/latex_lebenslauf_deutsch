@@ -1,6 +1,6 @@
 # Universelle Lebenslaufvorlage
 
-Hallo! Da mich einige Personen danach gefragt haben, habe ich meine Lebenslaufvorlage anonymisiert und hier für euch hochgeladen. **Viel Erfolg bei Euren Bewerbungen!**
+Hallo! Da mich einige Personen danach gefragt haben, habe ich meine Lebenslaufvorlage anonymisiert und hier für Euch hochgeladen. **Viel Erfolg bei Euren Bewerbungen!**
 
 ## Funktionen
 
