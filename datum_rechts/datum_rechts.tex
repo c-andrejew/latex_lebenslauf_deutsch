@@ -1,0 +1,140 @@
+\documentclass[letterpaper,11pt]{article}
+
+% this cv was inspired by https://github.com/arasgungore/arasgungore-CV but is not based uppon
+
+% Packages (not all are needed)
+\usepackage{fancyhdr} % For custom headers/footers
+\usepackage{helvet} % Arial font
+\usepackage[a4paper,top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm]{geometry} % 2.5cm margins from all sides
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{hyphenat}
+\usepackage{fontawesome}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{etoolbox}
+\usepackage{enumitem}
+
+% Definitions
+\renewcommand{\familydefault}{\sfdefault} % Set default font to sans-serif
+\renewcommand{\arraystretch}{1.2}
+\AtBeginEnvironment{tabular}{\noindent}
+\setlist[itemize]{leftmargin=8cm}
+
+%remove line 26 for accademic look
+
+%Change numbering
+\pagestyle{fancy}
+\fancyhf{} % Clear header/footer
+\rfoot{\thepage} % Page number at the bottom right
+\renewcommand{\headrulewidth}{0pt} % Remove header line
+
+% Sections formatting
+\titleformat{\section}
+  {\scshape\raggedright\selectfont\vspace{-4pt}}
+  {}
+  {0em}
+  {}
+  [\color{black}\titlerule\vspace{-2pt}]
+
+\newcommand{\pagesection}[2]{
+  \titleformat{\section}
+    {\raggedright\fontsize{#1}{#1}\selectfont\vspace{-4pt}}
+    {}
+    {0em}
+    {}
+    [\color{black}\titlerule\vspace{-2pt}]
+  \section{#2}
+}
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+%\vspace{-\baselineskip}
+
+\begin{document}
+\pagenumbering{gobble} %hide pagecount - comment out if numbering is needed
+
+\pagesection{20}{Lebenslauf}
+
+\begin{tabular}{@{}p{2cm}p{12cm}@{}}
+    {Name} & Max Mustermann \\
+    {Telefon} & +49 123 45678900 \\
+    {E-Mail} & max.mustermann@gmx.de \\
+    {Wohnort} & Musterstadt \\
+    {LinkedIn} & /in/max-mustermann-123456 \\ %or GitHub link
+\end{tabular}
+
+\pagesection{14}{Bildungsweg}
+     
+        \raggedright{\textbf{Muster Universität}}\hfill\raggedleft{Okt 2020 \textbf{--} Jul 2023}\\
+        
+\raggedright{B.Sc. Musterwissenschaften\hfill\raggedleft{Frankfurt am Main}\\
+\raggedright{Schwerpunkt: Musterstudies\\}
+     \vspace{6pt}
+     
+\raggedright{\textbf{Muster-Gymnasium}}\hfill\raggedleft{bis Jun 2020}\\
+\raggedright{Allgemeine Hochschulreife (Abitur)\hfill\raggedleft{Musterstadt}\\
+\raggedright{Leistungsfächer: Musterfach und Musterfach\\}
+
+
+\pagesection{14}{Berufserfahrung}
+
+	\raggedright{\textbf{Musterfirma 1}}\hfill\raggedleft{Jul 2023 \textbf{--} Heute}\\
+    \raggedright{\textit{Musterposition}}\hfill\raggedleft{Musterstadt}\\
+\begin{itemize}[nosep,topsep=6pt,partopsep=0pt,parsep=0pt,itemsep=1pt,leftmargin=*]
+        \item \begin{minipage}[t]{11cm} Entwicklung von Muster zur Muster (u.a. in den Bereichen Muster und Muster). Muster Muster Muster.
+        \end{minipage}
+        \vspace{3pt}
+        \item \begin{minipage}[t]{11cm} Entwicklung benutzerorientierter Muster in Muster, Muster, Muster und Muster. Muster Muster Muster.
+        \end{minipage}
+      \end{itemize}
+      \vspace{6pt}
+      
+	\raggedright{\textbf{Musterfirma 2}}\hfill\raggedleft{Jan 2023 \textbf{--} Jun 2023}\\
+    \raggedright{\textit{Musterposition}}\hfill\raggedleft{Musterstadt}\\
+\begin{itemize}[nosep,topsep=6pt,partopsep=0pt,parsep=0pt,itemsep=1pt,leftmargin=*]
+        \item \begin{minipage}[t]{11cm} Anpassung von Mustern an spezifische Anwendungsgebiete und Zielgruppen. Muster Muster Muster.
+        \end{minipage}
+        \vspace{3pt}
+        \item \begin{minipage}[t]{11cm} Gestaltung benutzerorientierter Muster in verschiedenen Muster-Anwendungen. Muster Muster Muster.
+        \end{minipage}
+      \end{itemize}
+      \vspace{6pt}
+      
+      	\raggedright{\textbf{Musterfirma 1}}\hfill\raggedleft{ 2021 \textbf{--} Dec 2022}\\
+    \raggedright{\textit{Musterposition}}\hfill\raggedleft{Musterstadt}\\
+\begin{itemize}[nosep,topsep=6pt,partopsep=0pt,parsep=0pt,itemsep=1pt,leftmargin=*]
+        \item \begin{minipage}[t]{11cm} Design von individuellen Mustern für vielfältige Zwecke. Muster Muster Muster. Muster Muster Muster.
+        \end{minipage}
+        \vspace{3pt}
+        \item \begin{minipage}[t]{11cm} Erstellung von Musterdesigns zur Verbesserung der Benutzererfahrung. Muster Muster Muster.
+        \end{minipage}
+      \end{itemize}
+      \vspace{6pt}
+
+\pagesection{14}{Kenntnisse}
+\raggedright{}
+\begin{tabular}{@{}p{2cm}p{12cm}@{}}
+\textbf{Software:} & Sehr gute Kenntnisse in Microsoft Office und Adobe Photoshop \\
+    & Gute Kenntnisse in Python, Stata und Adobe Illustrator \\
+    & Erfahrung mit VBA, PHP, JavaScript, MySQL und R Studio \\
+    
+
+\vspace{-7pt}\textbf{Sprachen:}&\vspace{-7pt} Deutsch (Muttersprache), Englisch (Verhandlungssicher),\\
+\textbf{} & Französisch (Grundkenntnisse) \\
+\vspace{-7pt}\textbf{Sonstige:} & \vspace{-7pt} Führerschein Klasse B \\
+\end{tabular}
+
+\end{document}
+
+
+% if more than one page is needed, enable pagecount and use pagebreaks for improved layout

@@ -1,0 +1,135 @@
+\documentclass[letterpaper,11pt]{article}
+
+% this cv was inspired by https://github.com/arasgungore/arasgungore-CV but is not based uppon
+
+% Packages (not all are needed)
+\usepackage{fancyhdr} % For custom headers/footers
+\usepackage{helvet} % Arial font
+\usepackage[a4paper,margin=2.5cm]{geometry} % 2.5cm margins from all sides
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{hyphenat}
+\usepackage{fontawesome}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{titlesec}
+
+% Definitions
+\renewcommand{\familydefault}{\sfdefault} % Set default font to sans-serif
+\renewcommand{\arraystretch}{1.2}
+\AtBeginEnvironment{tabular}{\noindent}
+
+%Change numbering
+\pagestyle{fancy}
+\fancyhf{} % Clear header/footer
+\rfoot{\thepage} % Page number at the bottom right
+\renewcommand{\headrulewidth}{0pt} % Remove header line
+
+%remove line 26 for accademic look
+
+% Sections formatting
+\titleformat{\section}
+  {\scshape\raggedright\selectfont\vspace{-4pt}}
+  {}
+  {0em}
+  {}
+  [\color{black}\titlerule\vspace{-2pt}]
+
+\newcommand{\pagesection}[2]{
+  \titleformat{\section}
+    {\raggedright\fontsize{#1}{#1}\selectfont\vspace{-4pt}}
+    {}
+    {0em}
+    {}
+    [\color{black}\titlerule\vspace{-2pt}]
+  \section{#2}
+}
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+\begin{document}
+\pagenumbering{gobble} %hide pagecount - comment out if numbering is needed
+
+\pagesection{20}{Lebenslauf}
+
+\begin{tabular}{@{}p{2cm}p{12cm}@{}}
+    {Name} & Max Mustermann \\
+    {Telefon} & +49 123 45678900 \\
+    {E-Mail} & max.mustermann@gmx.de \\
+    {Wohnort} & Musterstadt \\
+    {LinkedIn} & /in/max-mustermann-123456 \\ %or GitHub link
+\end{tabular}
+
+\pagesection{14}{Bildungsweg}
+
+\begin{tabular}{p{4cm}p{12cm}}
+    {Okt 2020 \textbf{--} Jul 2023} & \textbf{Muster Universität} \\
+    & B.Sc. Musterwissenschaften \\
+    & Schwerpunkt: Musterstudies \\
+    & \vspace{-\baselineskip}
+\end{tabular}
+\vspace{-12pt}
+
+\begin{tabular}{p{4cm}p{12cm}}
+    {bis Jun 2020} & \textbf{Muster-Gymnasium} \\
+    & Allgemeine Hochschulreife (Abitur) \\
+    & Leistungsfächer: Musterfach und Musterfach \\
+    & \vspace{-\baselineskip}
+\end{tabular}
+\vspace{-16pt}
+
+\pagesection{14}{Berufserfahrung}
+\begin{tabular}{p{4cm}p{12cm}}
+    {Jul 2023 \textbf{--} Heute} & \textbf{Musterfirma 1} \\
+    & \textit{Musterposition} \\
+    & \vspace{-\baselineskip}
+\begin{itemize}[nosep,topsep=6pt,partopsep=0pt,parsep=0pt,itemsep=1pt,leftmargin=*]
+        \item Entwicklung von Muster zur Muster (u.a. in den Bereichen Muster und Muster). Muster Muster Muster.
+        \item Entwicklung benutzerorientierter Muster in Muster, Muster, Muster und Muster. Muster Muster Muster.
+      \end{itemize}
+\end{tabular}
+
+\vspace{-12pt}
+
+\noindent
+\begin{tabular}{p{4cm}p{12cm}}
+    {Okt 2019 \textbf{--} Jun 2023} & \textbf{Musterfirma 2} \\
+    & \textit{Musterposition} \\
+    & \vspace{-\baselineskip}
+\begin{itemize}[nosep,topsep=6pt,partopsep=0pt,parsep=0pt,itemsep=1pt,leftmargin=*]
+        \item Anpassung von Mustern an spezifische Anwendungsgebiete und Zielgruppen. Muster Muster Muster.
+        \item Gestaltung benutzerorientierter Muster in verschiedenen Muster-Anwendungen. Muster Muster Muster.
+      \end{itemize}
+\end{tabular}
+\vspace{-16pt}
+
+\pagesection{14}{Kenntnisse}
+
+\begin{tabular}{p{2cm}p{12cm}}
+    \textbf{Software:} & Sehr gute Kenntnisse in Microsoft Office und Adobe Photoshop \\
+    & Gute Kenntnisse in Python, Stata und Adobe Illustrator \\
+    & Erfahrung mit VBA, PHP, JavaScript, MySQL und R Studio\\
+\end{tabular}
+
+\begin{tabular}{p{2cm}p{10cm}}
+    \textbf{Sprachen:} & Deutsch:\quad Muttersprache \\
+    & Englisch:\quad Verhandlungssicher \\
+    & Französisch:\quad Grundkenntnisse \\
+\end{tabular}
+
+\begin{tabular}{p{2cm}p{10cm}}
+    \textbf{Sonstige:} & Führerschein Klasse B \\
+\end{tabular}
+
+\end{document}
+
+% if more than one page is needed, enable pagecount and use pagebreaks for improved layout
