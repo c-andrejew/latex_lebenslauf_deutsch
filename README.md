@@ -18,6 +18,6 @@ gleich unter
 
 - **Leicht erweiterbar:** Zusätzliche Sektionen und weitere Informationen können wirklich einfach hizugefügt werden.
 
-- **ATS-freundlich:** Diese Vorlage wurde so entwickelt, dass sie gut von Personal-Software und KI-Systemen gelesen werden kann und um so Deine Chancen auf eine erfolgreiche Bewerbung zu erhöhen (jedenfalls die Chance, dass ein Mensch Seine Bewerbung liest).
+- **ATS-freundlich:** Diese Vorlage wurde so entwickelt, dass sie gut von Personal-Software und KI-Systemen gelesen werden kann und um so Deine Chancen auf eine erfolgreiche Bewerbung zu erhöhen (jedenfalls die Chance, dass ein Mensch Deine Bewerbung liest).
 
 - **CMU:** Um die CMU-Schriftart zu verwenden, entferne Zeile 26 in der Vorlage.
